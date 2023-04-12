@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="form1" method="post">
+       색을 선택해주세요: <input type="color"><br>
+       
+       숫자를 입력해세요(0~100)
+       <input type="number" max="100" min="0" step="10" value="50"><br>
+       슬라이드를 만족도를 입력하세요(1~10) <br>
+       <input type="range" min="1" max="10 value=5"><br>
+
+    성명을 선택하세요<br>
+    <select name="gender_select">
+        <option value="female">여성</option>
+        <option value="male" selected>남성</option>
+    </select>
+</form>
+    <p>선호하는 브라우저를 선택해주세요.</p>
+    <form action="process.jsp">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="구글 크롬"></option>
+            <option value="엣지"></option>
+            <option value="오페라"></option>
+            <option value="사파리"></option>
+            <option value="파이어폭스"></option>
+            </datalist>
+            <input type="submit">
+    </form>
+
+</body>
+</html>
