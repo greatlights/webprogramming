@@ -1,0 +1,5 @@
+*{color: blue;}
+p:hover{background-color: chartreuse};
+a:link {color: aqua;}
+a:visited{color:brown}
+#name{background-attachment: yellow; color: red;}
