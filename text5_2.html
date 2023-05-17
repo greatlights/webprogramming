@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text]{
+            font-weight: bold;
+            border: 2px solid blue;
+            background-color: white;
+            margin-bottom: 10px;
+            width: 20%;
+            
+        }
+        input[type=text]:focus{
+            font-size: 1.2em;
+            background-color: blue;
+            color: white;
+            border: 2px solid lightblue;
+        }
+        #subject{
+            background-color: white;
+            color:  black;
+            border: 2px solid blue;
+        }
+        #subject:hover{
+            background-image: url(앺파.png) ;
+            background-size: 100% 100%;
+        }
+        input[type=email]{
+            background-color: white;
+            border: 2px solid blue;
+            width: 20%;
+        }
+        input[type=email]:hover{
+            font-weight: bold;
+            border: 2px solid blue;
+            color: pink;
+            background-color: black;
+            margin-bottom: 10px;
+        }
+        #subject{
+            background-color: black;
+            color: white;
+            border: 2px solid yellow;
+        }
+        input[type=submit]{
+            background: lightgreen;
+            color: purple;
+            border: none;
+            padding: 16px 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>상품 평</h2>
+    <p>받으신 상품을 평가해주세요.</p>
+    <div>
+        <form action="process.jsp">
+            <label for="name">이름</label><br>
+            <input type="text" id="name" name="name" placeholder="이름"><br>
+            <label for="email">이메일</label><br>
+            <input type="email" id="email" name="email" placeholder="이메일"><br>
+            <label for="subject">상품 평</label><br>
+            <textarea id="subject" name="subject" 
+            placeholder="상품을 평가해주세요." style="height:100px"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+<body>
+    
+</body>
+</html>
