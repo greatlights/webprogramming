@@ -1,0 +1,18 @@
+.container{
+    background-color: royalblue;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    width: 250px; 
+    height: 1000px;
+    flex-wrap: wrap;  /*item크기가 container의 width보다 크면 줄바꿈을 해라(width는 250px, item123은 100, 100으로 정의했다면 item3개가 한 줄에 들어가지 못함 -> item > container*/
+    /* justify-content: center; /*justify-content는 item의 순서는 그대로 하여 위치를 변환할 수 있다.(그냥 flex-direction은 row면 오른쪽 기준으로 123순서->321로 오른쪽 정렬) */
+    align-content: stretch;  /*start는 바로 위, end는 가장 아래*/
+}
+.container .item{
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+    display: inline-flex;
+
+}
