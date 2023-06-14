@@ -1,0 +1,87 @@
+/* 글꼴 설정 */
+@font-face {
+    font-family: abster;
+    src: url(font/abster-webfont.woff) format('woff'); /*폰트불러오기, 여기는 코드 주심*/
+}
+
+/* margin값 초기화작업 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* container는 배경을 의미 */
+.container{
+    width: 100%; /*꽉 채움*/
+    height: 100vh; /*vh : 화면 확대, 축소했을 때 비율 정해줌*/
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/room.jpg); /*linear-gradient : 그라디언트 줄 때 투명값까지 설정(배경), background는 코드주심*/
+}
+
+/* header 영역은 화면 상단의 Design 로고글자와 메뉴바를 포함한다. */
+.container .header{
+    width: 80%; /*전체 영역(가로)의 80%를 차지*/
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;  
+    /*자식요소들을 양쪽에서부터 채워지도록 함(배분정렬)*/
+}
+
+/* 왼쪽 상단 글자 로고 디자인 스타일 */
+.container .header h1 a{
+    text-decoration: none;
+    color: white;
+    font-family: abster; /*위쪽에 있는 폰트를 쓴다는 것*/
+}
+
+/* 메뉴 요소에 대한 스타일링(배치) */
+.container .nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+/* 메뉴 요소에 대한 스타일링(글꼴) */
+.container .nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+/* 메뉴 요소에 대한 스타일링(마우스 이벤트(마우스를 올리면(hover) 글자색 변경)->(마우스를 올리면 skyblue색으로 글자색 변경) */
+.container .nav ul li a:hover{
+    text-decoration: none;
+    color: skyblue; 
+}
+
+.container .hero{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; /*여기도 코드 주심(font)*/
+}
+
+.container .hero h2{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.container .hero p{
+    font-size: 22px;
+}
+
+.container .hero button{
+    background: none;
+    border : 2px solid darkseagreen;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.container .hero button:hover{
+    background-color: darkslategray;
+}
